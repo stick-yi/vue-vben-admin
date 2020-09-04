@@ -21,17 +21,17 @@
         wokbStore.loadAction();
       });
       return () => (
-        <Row class={prefixCls} gutter={16}>
+        <Row class={prefixCls} gutter={12}>
           <Col md={24} lg={17}>
-            <ProdTotal class="mb-4" />
-            <TodoList class="mb-4" />
-            <DplyList class="mb-4" />
+            <ProdTotal class="mb-3" />
+            <TodoList class="mb-3" />
+            <DplyList class="mb-3" />
             <NewsList />
           </Col>
           <Col md={24} lg={7}>
-            <img src={wokbImg} class={[`${prefixCls}__wokb-img`, 'mb-4']} />
-            <ShortCuts class="mb-4" />
-            <FileList class="mb-4" />
+            <img src={wokbImg} class={[`${prefixCls}__wokb-img`, 'mb-3']} />
+            <ShortCuts class="mb-3" />
+            <FileList class="mb-3" />
             <AnnoList />
           </Col>
         </Row>
@@ -47,6 +47,7 @@
 
     &__wokb-img {
       width: 100%;
+      height: 172px;
     }
   }
 </style>

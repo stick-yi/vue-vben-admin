@@ -13,6 +13,9 @@
           span: 24,
         },
         schemas: basicSchema,
+        baseColProps: {
+          span: 8,
+        },
       });
 
       return () => (
@@ -22,7 +25,7 @@
             onClick={() => {
               setProps({ size: 'large' });
             }}
-            class="mx-3"
+            class="mr-2 mb-2"
           >
             更改表单size
           </a-button>
@@ -30,7 +33,7 @@
             onClick={() => {
               setProps({ labelWidth: 200 });
             }}
-            class="mx-3"
+            class="mr-2 mb-2"
           >
             更改labelWidth
           </a-button>
@@ -38,7 +41,7 @@
             onClick={() => {
               setProps({ labelAlign: 'left' });
             }}
-            class="mx-3"
+            class="mr-2 mb-2"
           >
             更改labelAlign
           </a-button>
@@ -46,7 +49,7 @@
             onClick={() => {
               setProps({ showActionButtonGroup: false });
             }}
-            class="mx-3"
+            class="mr-2 mb-2"
           >
             隐藏操作按钮
           </a-button>
@@ -55,7 +58,7 @@
             onClick={() => {
               setProps({ compact: true });
             }}
-            class="mx-3"
+            class="mr-2 mb-2"
           >
             紧凑表单
           </a-button>
@@ -63,7 +66,7 @@
             onClick={() => {
               setProps({ showResetButton: false });
             }}
-            class="mx-3"
+            class="mr-2 mb-2"
           >
             隐藏重置按钮
           </a-button>
@@ -76,7 +79,7 @@
                 },
               });
             }}
-            class="mx-3"
+            class="mr-2 mb-2"
           >
             修改重置按钮
           </a-button>
@@ -84,7 +87,7 @@
             onClick={() => {
               setProps({ showSubmitButton: false });
             }}
-            class="mx-3"
+            class="mr-2 mb-2"
           >
             隐藏查询按钮
           </a-button>
@@ -97,7 +100,7 @@
                 },
               });
             }}
-            class="mx-3"
+            class="mr-2 mb-2"
           >
             修改查询按钮
           </a-button>
@@ -109,7 +112,7 @@
                 },
               });
             }}
-            class="mx-3"
+            class="mr-2 mb-2"
           >
             操作按钮位置
           </a-button>
@@ -117,7 +120,7 @@
             onClick={() => {
               setProps({ disabled: true });
             }}
-            class="mx-3"
+            class="mr-2 mb-2"
           >
             禁用表单
           </a-button>

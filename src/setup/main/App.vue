@@ -59,7 +59,7 @@
       // 监听响应式断点
       createBreakpointListen();
 
-      let lockOn: { [key: string]: (...arg) => any } = {};
+      let lockOn: { [key: string]: Fn } = {};
       if (canLockPage) {
         const { on } = useLockPage();
         lockOn = on;
@@ -83,7 +83,6 @@
           <div id="app" on={lockOn}>
             {isLock && <LockPage />}
             <ConfigProvider
-              ider
               locale={zhCN}
               renderEmpty={renderEmpty}
               transformCellText={transformCellText}
